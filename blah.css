@@ -86,8 +86,26 @@ li {
 	padding: 0 10px;
 	width: 940px;
 }
+.banner-wrapper {
+  z-index: 4;
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 77px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 1);
+  transition: all 300ms ease-in-out;
+}
 header {
-	height: 120px;
+	height: 100px;
 }
 
 header h1 {
@@ -171,6 +189,16 @@ header nav ul li a {
 	background-color: #f8fafa;
 	padding: 60px 0;
 	text-align: center;
+	 display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
 }
 
 #primary-content h3 {
@@ -258,14 +286,14 @@ footer {
 }
 
 #footer-info {
-	width: 380px;
-	float: left;
+	width: 100%;
+	/*float: left;*/
 	margin-top: 10px;
 }
 
 #footer-links {
 	width: 520px;
-	float: right;
+	/*float: right;*/
 }
 
 #footer-links ul {

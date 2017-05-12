@@ -1,10 +1,10 @@
 (() => {
-  	'use strict';
+  'use strict';
  
     //DOM manipulation code here
 		let refOffset = 0;
-		// let visible = true;
-		const bannerHeight = 77;
+		let visible = true;
+		const bannerHeight = 100;
 		const bannerWrapper = document.querySelector('.banner-wrapper');
 		const banner = document.querySelector('.banner');
 
@@ -13,7 +13,7 @@
 		  bannerWrapper.style.msTransform = `translateY(-${bannerHeight}px)`;
 		  bannerWrapper.style.webkitTransform = `translateY(-${bannerHeight}px)`;
 		  bannerWrapper.style.MozTransform = `translateY(-${bannerHeight}px)`;
-		  banner.style.background = 'rgba(162, 197, 35, 0.6)';
+		  banner.style.background = 'rgba(255, 255, 255, 0.6)';
 		}
 
 		function animateIn() {
@@ -21,11 +21,11 @@
 		  bannerWrapper.style.msTransform = 'translateY(0px)';
 		  bannerWrapper.style.webkitTransform = 'translateY(0px)';
 		  bannerWrapper.style.MozTransform = 'translateY(0px)';
-		  banner.style.background = 'rgba(162, 197, 35, 0.6)';
+		  banner.style.background = 'rgba(255, 255, 255, 0.6)';
 		}
 
 		const handler = () => {
-			const newOffset = window.scrollY || window.pageYOffset;
+		const newOffset = window.scrollY || window.pageYOffset;
 			
 			if (newOffset > bannerHeight) {
 			  if (newOffset > refOffset) {
@@ -36,11 +36,11 @@
 
 			  refOffset = newOffset;
 			} else {
-			  banner.style.backgroundColor = 'rgba(162, 197, 35, 1)';
+			  banner.style.backgroundColor = 'rgba(255, 255, 255, 1)';
 			}
 
 		
-		};
+		  };
 
-  		window.addEventListener('scroll', handler, false);
+  	window.addEventListener('scroll', handler, false);
 })();
