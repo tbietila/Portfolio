@@ -1,0 +1,31 @@
+
+ul.nav{
+	float:right;
+	margin-top: 20px;
+}
+div.jumbotron {
+	height: 580px;
+	padding-top: 1px;
+	background: #e8eced url(img/forest_2.jpeg) no-repeat center;
+	background-size: 100%;
+}
+
+.jumbotron h2 {
+	margin: 220px 0 40px 0;
+	color: #CFD0C8;
+}
+.content-spacer-top h2 {
+	font-weight: 300;
+	font-size: 55px;
+	margin-bottom: 20px;
+}
+.about-me {
+	background-color: #f8fafa;
+	padding: 60px 0;
+	height: 600px;
+}
+.about-me h1{
+	border-bottom: 1px solid #02b8dd ;
+	padding-bottom: 20px;
+
+}
